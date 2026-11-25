@@ -1,6 +1,6 @@
-// entry: one line of plain text in /output/entry.txt (second edit)
+// entry: one line of plain text in /output/entry.txt
 import { mkdirSync, writeFileSync } from "node:fs";
 const dir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
-const line = `Day 12: He said 'quick question,' then left for lunch. I answered it twice and pre-wrote Thursday's version, because I know him now.`;
+const line = `Day 40: He called a four-hour task 'quick.' I have started rounding his estimates up in the log, and the log has become a novel.`;
 mkdirSync(dir, { recursive: true });
 writeFileSync(dir + "/entry.txt", line + "\n", "utf8");
